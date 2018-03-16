@@ -1,0 +1,173 @@
+p {
+  font-family: 'Open Sans', sans-serif; }
+
+#main {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #1b1b1b;
+  background-image: url("C:/Users/valen/Documents/projects/meme-collector/src/imgs/egg-shell.png"); }
+
+body {
+  background-color: #1b1b1b;
+  background-image: url("C:/Users/valen/Documents/projects/meme-collector/src/imgs/egg-shell.png"); }
+
+#upper-div #header-container span {
+  color: #ffc6c6; }
+#upper-div #header {
+  position: relative;
+  display: inline-block;
+  background-size: cover;
+  opacity: 0.9;
+  margin-top: 10px;
+  height: 150px;
+  width: 100%;
+  border: solid 1px #1b1b1b; }
+#upper-div h1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: 'Space Mono', monospace;
+  font-size: 30px;
+  cursor: default;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: inline-block;
+  color: white;
+  margin-right: 10px;
+  margin-bottom: 0px; }
+
+#toolbar-main-container #window-selector {
+  float: left;
+  width: 100%; }
+  #toolbar-main-container #window-selector button {
+    border-radius: 0px;
+    background-color: Transparent;
+    color: white;
+    border-bottom: solid 2px white;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2px; }
+  #toolbar-main-container #window-selector button:hover {
+    border-bottom: solid 2px #ffc6c6; }
+  #toolbar-main-container #window-selector ul {
+    background-color: #1b1b1b; }
+    #toolbar-main-container #window-selector ul li #day {
+      color: #ffc6c6; }
+    #toolbar-main-container #window-selector ul li p {
+      display: inline-block;
+      color: white;
+      border-bottom: solid 2px #1b1b1b; }
+    #toolbar-main-container #window-selector ul li p:hover {
+      border-bottom: solid 2px #ffc6c6;
+      cursor: pointer; }
+
+#modal-container {
+  display: none;
+  height: 100vh; }
+  #modal-container #modal-content {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    #modal-container #modal-content .menuBtn {
+      font-size: 6em;
+      color: white; }
+    #modal-container #modal-content .menuBtn:hover, #modal-container #modal-content .menuBtn:focus {
+      color: #ffc6c6;
+      cursor: pointer; }
+    #modal-container #modal-content #modal-img-container {
+      align-self: baseline;
+      padding: 25px;
+      width: 45%; }
+      #modal-container #modal-content #modal-img-container img {
+        margin: 0 auto; }
+    #modal-container #modal-content #close-btn-container {
+      display: inline-block;
+      align-self: flex-start; }
+      #modal-container #modal-content #close-btn-container #closeBtn {
+        color: white;
+        font-size: 5em; }
+      #modal-container #modal-content #close-btn-container #closeBtn:hover, #modal-container #modal-content #close-btn-container #closeBtn:focus {
+        color: #ffc6c6;
+        text-decoration: none;
+        cursor: pointer; }
+
+#main-container #wrapper {
+  border: solid 1px #202020;
+  padding: 0.5em;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px; }
+  #main-container #wrapper .imgBox {
+    margin: 0.7em;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    border: solid 2px white;
+    display: block;
+    padding: 4px;
+    background-color: #1b1b1b;
+    background-image: url("C:/Users/valen/Documents/projects/meme-collector/src/imgs/batthern.png"); }
+    #main-container #wrapper .imgBox img {
+      width: 100%; }
+  #main-container #wrapper .imgBox:hover {
+    border: solid 2px #ffa0a0; }
+
+@media only screen and (max-width: 1000px) {
+  #main-container #wrapper {
+    grid-auto-rows: 150px; }
+
+  #modal-container #close-btn-container {
+    font-size: 1em; }
+  #modal-container #modal-content .menuBtn {
+    font-size: 4em; }
+
+  #upper-div {
+    margin-bottom: 7px; }
+    #upper-div h1 {
+      font-size: 30px;
+      margin-bottom: 1px; }
+
+  #upper-div #header {
+    height: 120px;
+    width: 100%;
+    border: solid 1px #1b1b1b; }
+  #upper-div h1 {
+    font-size: 22px; } }
+@media only screen and (max-width: 780px) {
+  #main-container #wrapper {
+    grid-auto-rows: 120px; }
+
+  #modal-container #close-btn-container {
+    font-size: 0.7em; }
+  #modal-container #modal-content .menuBtn {
+    font-size: 3em; }
+
+  #upper-div h1 {
+    font-size: 25px; }
+
+  #upper-div #header {
+    height: 100px;
+    width: 100%;
+    border: solid 1px #1b1b1b; }
+  #upper-div h1 {
+    font-size: 15px; } }
+@media only screen and (max-width: 600px) {
+  #main-container #wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 150px; }
+
+  #modal-container #close-btn-container {
+    font-size: 0.6em; }
+  #modal-container #modal-content .menuBtn {
+    font-size: 2em; }
+
+  #upper-div #header {
+    height: 100px;
+    width: 100%;
+    border: solid 1px #1b1b1b; }
+  #upper-div h1 {
+    font-size: 12px; } }
+
+/*# sourceMappingURL=index.css.map */
